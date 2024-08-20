@@ -29,21 +29,21 @@ Allows to modify a field in a specific list or for the whole site.
 Set-PnPField -Identity AssignedTo -Values @{JSLink="customrendering.js";Group="My fields"}
 ```
 
-Updates the AssignedTo field on the current web to use customrendering.js for the JSLink and sets the group name the field is categorized in to "My Fields". Lists that are already using the AssignedTo field will not be updated.
+Updates the AssignedTo field on the current web to use customrendering.js for the JSLink and categorizes the field under the group name 'My Fields'. Lists that are already using the AssignedTo field will not be updated.
 
 ### EXAMPLE 2
 ```powershell
 Set-PnPField -Identity AssignedTo -Values @{JSLink="customrendering.js";Group="My fields"} -UpdateExistingLists
 ```
 
-Updates the AssignedTo field on the current web to use customrendering.js for the JSLink and sets the group name the field is categorized in to "My Fields". Lists that are already using the AssignedTo field will also be updated.
+Updates the AssignedTo field on the current web to use customrendering.js for the JSLink and categorizes the field under the group name 'My Fields'. Lists that are already using the AssignedTo field will also be updated.
 
 ### EXAMPLE 3
 ```powershell
 Set-PnPField -List "Tasks" -Identity "AssignedTo" -Values @{JSLink="customrendering.js"}
 ```
 
-Updates the AssignedTo field on the Tasks list to use customrendering.js for the JSLink
+Updates the AssignedTo field on the Tasks list to use customrendering.js for the JSLink.
 
 ## PARAMETERS
 
